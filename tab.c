@@ -3,7 +3,7 @@
 int main()
 {
     int i=0;
-    char ciag[] = "ala ma kota";
+    char ciag[] = "ala ma3 kota";
 
         while (ciag[i]){
 
@@ -16,10 +16,15 @@ int main()
     i = sizeof(ciag)-2;
 
     printf("\n");
-    while (i>=0){
 
-        printf("%c", ciag[i]);
-        --i;
+    while (i>=0){
+        if (ciag[i]>='a' && ciag[i]<='z') {
+            //printf("%c", ciag[i]);
+        }
+        else{
+            printf("%c ", ciag[i]);
+    }
+    --i;
     }
 
     return 0;
